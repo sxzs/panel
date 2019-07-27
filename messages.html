@@ -42,7 +42,7 @@
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name" class="light-table-filter" data-table="order-table">
             <thead>
               <tr>
-                <th scope="col">#</th>
+                <th scope="col"><input type="checkbox" id="checkall" class=""></th></th>
                 <th scope="col">From</th>
                 <th scope="col">Title</th>
                 <th scope="col">Data</th>
@@ -51,7 +51,7 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
+                <th scope="row"><input type="checkbox" class="check"></th>
                 <td>google</td>
                 <td>work</td>
                 <td>2 hour</td>
@@ -76,14 +76,14 @@
                 <td></td>  
               </tbody>
               <tr>
-                <th scope="row">2</th>
+                <th scope="row"><input type="checkbox"  class="check"></th>
                 <td>facebook</td>
                 <td>friend</td>
                 <td>1 day</td>
                 <td><a href="#" class="far fa-trash-alt"></a><a href="#" class="fas fa-eye"></a><a href="#" class="fas fa-star"></a></td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row"><input type="checkbox" class="check"></th>
                 <td>lara</td>
                 <td>i need you</td>
                 <td>1 year</td>
@@ -91,6 +91,21 @@
               </tr>
             </tbody>
           </table>
+          <script>checkall.onclick=function hiuy() {
+            var xs= document.getElementById("checkall");
+            var ys=document.getElementsByClassName("check");
+            var i;
+            if(xs.checked == true){
+            
+            for (i = 0; i < ys.length; i++) {
+             ys[i].checked= true;
+             }
+             }else{
+                 for (i = 0; i < ys.length; i++) {
+                     ys[i].checked= false;
+             }
+            }
+         }</script>
     </div>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
