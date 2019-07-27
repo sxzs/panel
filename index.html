@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Panel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link rel="stylesheet" href="" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+	<body>
+	<nav id="mynav">
+        <div class="logo">Logo</div>
+        <a href="index" class="active">
+            <span class="fa fa-home"></span>
+            <span class="navlinks">Home</span>
+        </a>
+        <a href="user">
+            <span class="fa fa-user"></span>
+            <span class="navlinks">Users</span>
+        </a>
+        <a href="photos">
+            <span class="fa fa-images"></span>
+            <span class="navlinks">Photos</span>
+        </a>
+        <a href="messages">
+            <span class="fa fa-envelope"></span>
+            <span class="navlinks">Messages</span>
+        </a>
+        <a href="#" id="hov" class="nonehover">
+            <span class="fas fa-angle-double-right" id="arrow"></span>
+        </a>
+        
+    </nav>
+    <div class="container main">
+        <h1>Panel</h1>
+        <h3>data</h3>
+        <div class="row mydata">
+          <div class="col-6">
+            <h5>total photos</h5>
+            <span class="count">1500</span> <i class="fas fa-image"></i>
+          </div>
+          <div class="col-3">
+            <h5>total visits</h5>
+            <span class="count">200000</span> <i class="far fa-eye"></i>
+          </div>
+          <div class="col-3">
+            <h5>total earned</h5>
+            <span class="count">250</span> <i class="fas fa-dollar-sign"></i>
+          </div>
+        </div>
+        <h3>Visitors Chart</h3>
+        
+        <canvas id="myChart" style="display: block; height: 200px; width: 500px;" width="750" height="375" class="chartjs-render-monitor"></canvas>
+        
+        <h3>Scound Chart</h3>
+        <canvas id="canvas"></canvas>
+        
+        <div class="buttons">
+            <h2>button styles</h2>
+            <!-- <button class="btn btn-type-2 btn-1">Test</button>
+            <button class="btn btn-type-2 btn-2">Test</button>
+            <button class="btn btn-3">Test</button>
+            <button class="btn btn-4">Test</button> -->
+            <hr>
+            <button class="btn btn-5 btn-type-2 ">main color</button>
+            <button class="btn btn-5">main color</button>
+
+            <button class="btn btn-6 btn-type-2">mygreen</button>
+            <button class="btn btn-6">mygreen</button>
+
+            <button class="btn btn-7 btn-type-2">myblue</button>
+            <button class="btn btn-7">myblue</button>
+
+            <button class="btn btn-8 btn-type-2">myred</button>
+            <button class="btn btn-8">myred</button>
+
+            <button class="btn btn-9 btn-type-2">mygray</button>
+            <button class="btn btn-9">mygray</button>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="mycollapse  col-6">
+              <h3>collapse</h3>
+              <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Collapsible Group Item #1<i class="fas fa-chevron-up"></i>
+                        </button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Collapsible Group Item #2<i class="fas fa-chevron-up"></i>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Collapsible Group Item #3<i class="fas fa-chevron-up"></i>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          
+          <div class="mytabs col-6">
+            <h3>Tabs</h3>
+            <ul class="nav nav-tabs  " id="myTab" role="tablist">
+              <li class="nav-item col ">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+              </li>
+              <li class="nav-item col">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">home tab</div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">profile tab</div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">contact tabs</div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="mytooltip col-6">
+            <h3>tooltip</h3>
+            <p> here my <span class="mytool" data-toggle="tooltip" data-placement="top" title="Tooltip on top">tooltip</span> for you.</p>
+            <p> here your <span class="mytool" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">popover</span> for me.</p>
+          
+          </div>
+          <div class="naveffect col-6">
+            <h3>links & nav effect</h3>
+            <ul>
+              <li><a href="" class="naveff-1">one</a></li>
+              <li><a href="" class="naveff-2">twe</a></li>
+              <li><a href="" class="naveff-3">three</a></li>
+              <li><a href="" class="naveff-4">four</a></li>
+              <li><a href="" class="naveff-5">five</a></li>
+              <li><a href="" class="naveff-6">six</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          
+          <div class="col">
+              <h3>Alarts</h3>
+            <div class="myalart-1 alert alert-dismissible">blue alert <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+            <div class="myalart-2 alert alert-dismissible">red alert <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+            <div class="myalart-3 alert alert-dismissible">dark alert <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+            <div class="myalart-4 alert alert-dismissible">green alert <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+            <div class="myalart-5 alert alert-dismissible">main alert <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+            <div class="myalart-6 alert alert-dismissible">yallow alert <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.bundle.min.js"></script>
+    
+    <script src="javascript\js.js"></script>
+    
+    </body>
+</html>
