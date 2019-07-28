@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Panel - add photos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/jquery-simple-lightbox.css" />
+    </head>
+	<body>
+	<nav id="mynav">
+        <div class="logo">Logo</div>
+        <a href="index.html" >
+            <span class="fa fa-home"></span>
+            <span class="navlinks">Home</span>
+        </a>
+        <a href="user.html" >
+            <span class="fa fa-user"></span>
+            <span class="navlinks">Users</span>
+        </a>
+        <a href="photos.html" class="active">
+            <span class="fa fa-images"></span>
+            <span class="navlinks">Photos</span>
+        </a>
+        <a href="messages.html">
+            <span class="fa fa-envelope"></span>
+            <span class="navlinks">Messages</span>
+        </a>
+        <a href="#" id="hov" class="nonehover">
+            <span class="fas fa-angle-double-right" id="arrow"></span>
+        </a>
+        
+    </nav>
+    <div class="container main">
+        <div class="row">
+            <h1 class="col-9">Photos</h1>
+            <a href="photos.html" class="add col-2"><i class="fas fa-undo"></i></a>
+        </div>
+        <p style="margin-bottom:25px" class="buttons">Images: <span class="imupl-files-current"></span>/<span class="imupl-files-max"></span> <button style="float:right" class="btn btn-7"><i class="fa fa-upload"></i> Upload</button></p>
+
+        <div class="imupl-files-list"></div>
+
+        <input type="file" multiple class="imupl-fileinput" />
+        <div class="imupl-edit-overlay">
+            <div class="thumbnail">
+                <div class="imupl-crop-wrapper">
+                    <div class="imupl-cropper">
+                        <div class="imupl-cropper-start"></div>
+                        <div class="imupl-cropper-end"></div>
+                    </div>
+                    <div class="img"></div>
+                </div>
+                <p>
+                    <button class="btn btn-primary imupl-button-edit-save" style="float:right">OK</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="imupl-dragdrop-hover"></div>
+            
+           
+            
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="javascript\add-photo.js"></script>
+    <script src="javascript\js.js"></script>
+    
+    </body>
+</html>
